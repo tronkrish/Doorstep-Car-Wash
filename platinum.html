@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Platinum Package</title>
+    <link rel="stylesheet" href="./CSS3/platinum.css">
+</head>
+<body>
+    <div class="payment__container">
+        <header class="payment__header">
+            <h1>Secure Payment</h1>
+            <p>PLATINUM PACKAGE - ₹4,500</p>
+        </header>
+
+        <section class="payment__options">
+            <h2>Select Payment Method</h2>
+            <div class="payment__methods">
+                <button class="payment__method">
+                    <img src="./CSS3/large-preview.jpg" alt="Card Icon">
+                    Credit/Debit Card
+                </button>
+                <button class="payment__method">
+                    <img src="./CSS3/download.png" alt="UPI Icon" >
+                    UPI
+                </button>
+                <button class="payment__method">
+                    <img src="./CSS3/atm-card.png" alt="Wallet Icon" >
+                    Wallet
+                </button>
+                <button class="payment__method">
+                    <img src="./CSS3/images.png" alt="Net Banking Icon" >
+                    Net Banking
+                </button>
+            </div>
+        </section>
+
+        <section class="card__details">
+            <h2>Enter Card Details</h2>
+            <form class="card-form" action="process-payment.html" method="POST">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+
+                <div class="form__row">
+                    <div class="form__column">
+                        <label for="expiry-date">Expiry Date</label>
+                        <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                    </div>
+                    <div class="form__column">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                    </div>
+                </div>
+
+                <label for="card-name">Cardholder Name</label>
+                <input type="text" id="card-name" name="card-name" placeholder="Full Name" required>
+
+                <button type="submit" class="btn">Pay ₹4,500</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

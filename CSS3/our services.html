@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doorstep Car Wash - Our Services</title>
+    <style>
+        :root {
+            --primary-color: #da042a;
+            --primary-color-dark: #c00427;
+            --secondary-color: #15151f;
+            --secondary-color-dark: #0a0b0f;
+            --text-light: #6b7280;
+            --extra-light: #f8f7fd;
+            --white: #ffffff;
+            --max-width: 1200px;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+            background-color: #f4f4f4;
+            color: var(--text-light);
+        }
+
+        header {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 0.8rem 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-card {
+            flex: 1 1 calc(33.33% - 20px);
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            color: var(--primary-color);
+        }
+
+        .service-card p {
+            padding: 0 15px;
+            font-size: 1rem;
+        }
+
+        .service-card a {
+            display: inline-block;
+            margin: 15px 0;
+            padding: 10px 20px;
+            background: var(--primary-color);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .service-card a:hover {
+            background: var(--primary-color-dark);
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .service-card {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .service-card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Doorstep Car Wash - Our Services</h1>
+        <p>Premium car wash services delivered right to your doorstep. and We use only premium <br>industry best products , carefully choosen for proper care of your cars.</p>
+    </header>
+
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <img src="./clean 10.jpeg" alt="Exterior Wash">
+                <h3>Exterior Wash</h3>
+                <p>Comprehensive cleaning and polishing for a shiny and spotless car exterior.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-card">
+                <img src="./interior.jpeg" alt="Interior Cleaning">
+                <h3>Interior Cleaning</h3>
+                <p>Deep cleaning of car interiors to remove dust, stains, and bad odors.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-card">
+                <img src="./clean 15.jpeg" alt="Full Car Detailing">
+                <h3>Full Car Detailing</h3>
+                <p>A complete detailing service to restore your car to showroom condition.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-card">
+                <img src="./engine.jpeg" alt="Engine Cleaning">
+                <h3>Engine Cleaning</h3>
+                <p>Thorough cleaning of the engine bay to ensure optimal performance.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-card">
+                <img src="./clean 16.jpeg" alt="Headlight Restoration">
+                <h3>Headlight Restoration</h3>
+                <p>Restore foggy headlights to improve visibility and enhance your car's look.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-card">
+                <img src="./ceramic.jpeg" alt="Ceramic Coating">
+                <h3>Ceramic Coating</h3>
+                <p>Protect your car's paint with a long-lasting ceramic coating for a glossy finish.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Transparent process where your exterior and interior are professionally cleaned</p>
+    </footer>
+</body>
+
+</html>
