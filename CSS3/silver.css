@@ -18,17 +18,13 @@ body {
   background-color: var(--extra-light);
   color: var(--secondary-color);
   line-height: 1.6;
-  background: url(./Wash3.jpg) no-repeat;
-  background-size: cover;
-  backdrop-filter: blur(10px);
-  background-position: center;
 }
 
 .payment__container {
   max-width: 700px;
   margin: 3rem auto;
   padding: 2rem;
-  background-color: var(--white);
+  /* background-color: var(--white); */
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -51,7 +47,7 @@ body {
 }
 
 .payment__options {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem;  
 }
 
 .payment__options h2 {
